@@ -1,6 +1,6 @@
 # 🥣 Recipes
 
-A gathering of digital methods recipes for research, teaching and collaborations from across the [Public Data Lab](http://publicdatalab.org/).
+A gathering of digital methods recipes and ["how-tos"](https://recipes.hypotheses.org/7430) for research, teaching and collaborations from across the [Public Data Lab](http://publicdatalab.org/).
 
 # 🎑 Visual methods recipes
 

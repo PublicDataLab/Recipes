@@ -12,7 +12,7 @@ This approach may be used to study how the visual representations of a particula
 
 – “Media frequency” (grouped per hour, day, week, month, or year)
 
-# 📃Steps
+# 📃 Steps
 
 1. Open csv with media frequency and urls in Google spreadsheet
 2. Sort by media frequency

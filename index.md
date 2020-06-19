@@ -12,7 +12,7 @@ A gathering of digital methods recipes for research, teaching and collaborations
 
 # 📚Other resources
 
-* [Field Guide to "Fake News"](http://fakenews.publicdatalab.org/)
+* [*Field Guide to "Fake News"*](http://fakenews.publicdatalab.org/)
 * [Tools, Scripts, Libraries for Digital Methods Research](https://github.com/PublicDataLab/code-for-research/wiki/Tools,-Scripts,-Libraries-for-Digital-Methods-Research)
 
 # 🐜

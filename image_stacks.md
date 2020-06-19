@@ -11,7 +11,7 @@ Comparing smart cities architecture
 # 🧱Input from TCAT
 - “Media frequency”, grouped per hour, day, week, month, or year
 
-# 📃Steps
+# 📃 Steps
 
 1. Open data with Google Spreadsheet
 2. Sort data by media frequency

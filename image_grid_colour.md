@@ -8,12 +8,12 @@ This approach may be used to explore a rather large collection of images. By org
 - [Instagram images for #climatechange after US withdrawal from the Paris Agreement](https://drive.google.com/file/d/1Lk4NVGmzS6KT5DN1mX69ZA20XpxkynIj/view)
 - [Finding similar images depicting “cars on fire” during a protest march](https://medium.com/densitydesign/fakes-flames-and-memes-part-2-ece5ab4de797)
 
-# 🧱Inputs from TCAT
+# 🧱 Inputs from TCAT
 
 - “Media frequency”
 - Or “Export all tweets from selection” → column “from_user_profile_image_url”
 
-# Steps
+# 📃 Steps
 
 1. Open data with Google Spreadsheet
 2. Export csv with URLs list from Google Spreadsheet

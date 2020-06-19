@@ -1,18 +1,18 @@
-# Image grid, by ranking and date, annotated
+# 🧮🔝 Image grid, by ranking and date, annotated
 
 *Visualizing top ten images per day (week, month, year)*
 
-This approach may be used to study how the visual representations of a particular issue changes overtime. By creating a grid in which columns represent time frames and rows represent engagement values, one is able to observe the change overtime (or lack thereof) in the type of images that create more engagement. This approach should be used with a rather small set of images (no more than 10 images per time frame). 
+This approach may be used to study how the visual representations of a particular issue changes overtime. By creating a grid in which columns represent time frames and rows represent engagement values, one is able to observe the change overtime (or lack thereof) in the type of images that create more engagement. This approach should be used with a rather small set of images (no more than 10 images per time frame).
 
-# 🗄️ EXAMPLES
+# 🗄️ Examples
 
 - [Top ten images per year for the query [“climate change”] on Google.com](https://docs.google.com/spreadsheets/d/1B5Waf-I1sXvrXWVZUdm14lyBIvKdxy_RBCXp_-3Nly4/edit?usp=sharing)
 
-🧱INPUT FROM TCAT
+# 🧱Input from TCAT
 
 – “Media frequency” (grouped per hour, day, week, month, or year)
 
-📃STEPS
+# 📃Steps
 
 1. Open csv with media frequency and urls in Google spreadsheet
 2. Sort by media frequency

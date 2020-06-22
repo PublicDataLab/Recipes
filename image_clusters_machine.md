@@ -22,7 +22,13 @@ This approach helps to cluster and visualise images in a collection, according t
 3. Import URLs list in [image tagging tool](https://densitydesign.github.io/dd-image-tagging/)) (be sure to get your own [Clarifai API key](https://portal.clarifai.com/signup) and paste it into the tool)
 4. Run tagging (click button: process input file)
 
+![](https://i.imgur.com/JM2OaIW.gif)
+
 ## Download images locally and resize them
+
+You can do this, for example, using a browser extension or using the command line.
+
+### Using browser extension
 
 1. Install [Tab Save Chrome extension](https://chrome.google.com/webstore/detail/tab-save/lkngoeaeclaebmpkgapchgjdbaekacki)
 2. Copy and paste URLs list in Tab Save
@@ -31,6 +37,22 @@ This approach helps to cluster and visualise images in a collection, according t
 5. Drag images
 6. Resize by 50%
 7. Unzip folder
+
+### Using command line
+
+An alternative approach to downloading images is to use the [command line](https://en.wikipedia.org/wiki/Command-line_interface).
+
+1. First you'll need to install [wget](https://www.gnu.org/software/wget/) a tool for downloading files using HTTP and other protocols. How you do this will depend on your operating system, your command line interface and your package manager. For example,
+  - If you're on a Mac you can install a package manager such as [Homebrew](https://brew.sh/) and you can use `$ brew edit wget`
+  - If you're on Linux you can use `$ apt-get install wget`
+2. Put the image URLs into a single [csv file](https://en.wikipedia.org/wiki/Comma-separated_values)
+3. Create a folder where you'd like the images to go and navigate to the folder using the command line
+  - You can use `ls` to list the files at your location and `cd` to change to a given directory
+4. You can download the files listed in the csv file using the command `wget -i [path to the csv file] --show-progress`
+  - For further details and other options see the [wget manual](https://www.gnu.org/software/wget/manual/wget.html)
+5. If this works you should have a folder full of images. 🎏
+  - If you'd like to create a text file with the images which are in the folder (e.g. to check which have downloaded or to add file names to a dataset) you can use `ls -1 >> [name of your file.csv]` to generate another csv files with the names of all the files which have successfully downloaded.
+
 
 ## Prepare edges table for Gephi
 

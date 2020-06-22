@@ -74,12 +74,12 @@ An alternative approach to downloading images is to use the [command line](https
 3. Make a copy of “Id” column into a new column
 4. Rename the new column as “image”
 5. In the new column “Image”, transform URLs strings into file names:
-  a. Sort column “Image” alphabetically
-  b. There are different types of urls, but all of them ends with the image name. The goal is to delete every character before the image name with the Find and Replace tool. Proceed by group of similar URLs.
-  c. Select column “Image”
-  d. Edit → find and replace
-  e. Find a string such as `https://pbs.twimg.com/media/` and replace with nothing (be sure that you are doing the search only in a “specific range”, which in this case is the column “Image”)
-  f. Repeat for each type of URL, until you only have image names and no URLs
+  - Sort column “Image” alphabetically
+  - There are different types of urls, but all of them ends with the image name. The goal is to delete every character before the image name with the Find and Replace tool. Proceed by group of similar URLs.
+  - Select column “Image”
+  - Edit → find and replace
+  - Find a string such as `https://pbs.twimg.com/media/` and replace with nothing (be sure that you are doing the search only in a “specific range”, which in this case is the column “Image”)
+  - Repeat for each type of URL, until you only have image names and no URLs
 6. Export node csv from Google Spreadsheet
 
 ## Import network and visualize clusters with Gephi

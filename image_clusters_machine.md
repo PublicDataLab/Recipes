@@ -60,12 +60,6 @@ An alternative approach to downloading images is to use the [command line](https
 2. Rename headers: url → Source; concept → Target; confidence → Weight
 3. Export edges csv from Google Spreadsheet
 
-## Prepare edges table for Gephi
-
-1. Import csv output of Image tagging tool in Google spreadsheet
-2. Rename headers: url → Source; concept → Target; confidence → Weight
-3. Export edges csv from Google Spreadsheet
-
 ## Prepare nodes table for Gephi
 *Note: you can also use [Table2Net](https://medialab.github.io/table2net/) to create graph files from csv files, but here we will do this manually to update image locations.*
 

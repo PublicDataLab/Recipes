@@ -25,3 +25,5 @@ This approach may be used to study how the visual representations of a particula
 9. Style grid (add time stamps in headers, define colors and fonts for headers, set the size of columns and rows)
 10. Make a screenshot
 11. Annotate screenshot with [Vectr.com](https://vectr.com/)
+
+![](https://i.imgur.com/dvsRJZN.gif)

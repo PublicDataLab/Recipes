@@ -30,7 +30,7 @@ For larger groups it can also make sense to break into smaller groups, and then 
 
 # 📖 Taking notes together
 
-*What was the third thing we found again?*"
+"*What was the third thing we found again?*"
 
 Throughout all of these individual, small group and collective moments it can be helpful to keep a diary as you discuss, notice things and learn together.
 

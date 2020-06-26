@@ -99,6 +99,16 @@ For example, here's a Twitter data export that has been transformed and curated 
 
 ![](https://i.imgur.com/eegve1B.gif)
 
+# ✂️ Make a longer version and a shorter cut
+
+"*Where did that graphic go?*"
+
+When organising research across a group it can be useful to keep notes, versions and materials in order to be able to retrace your steps and also to understand what each other have done in the context of interpretive group work.
+
+For the purposes of presenting your work you'll often want to focus on a much smaller subset of some of the most interesting things you've found (rather than all of the things that you did).
+
+In order to be able to accommodate both of these scenarios, for example with accounts of your work or slide decks, you can make a longer version to gather everything together, and then make a much shorter cut (a ["radical edit"](https://www.uva.nl/en/profile/r/o/r.a.rogers/r.a.rogers.html) as Richard Rogers puts it) to boil it down to the most interesting and compelling material.
+
 # 🐙 Inspiration, acknowledgments and contributors
 
 *Many of the practices and approaches in this document were originally developed in the context of at [data sprints](https://digitalsts.net/essays/data-sprints/) with the [Digital Methods Initiative](http://digitalmethods.net/) – including through the [EMAPS project](http://climaps.eu/) – and have been subsequently developed, supplemented and adapted by other researchers and centres associated with the [Public Data Lab](http://publicdatalab.org/). The approach to "staying in the spreadsheet" comes from teaching at [DensityDesign Lab](https://densitydesign.org/).*

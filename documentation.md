@@ -6,27 +6,29 @@ While natural and computer scientists may talk of [reproducibility](https://en.w
 
 This document outlines different practices approaches for organising, documenting and accounting for collaborative digital methods projects.
 
-# ☕️ Being mindful of time
+- [🐜 Organising collaborative work at a distance](#-organising-collaborative-work-at-a-distance)
+- [📖 Taking notes together](#-taking-notes-together)
+- [🗂 Set up a shared workspace](#-set-up-a-shared-workspace)
+- [💾 Documenting datasets](#-documenting-datasets)
+  - [🗄 Archiving original exports](#-archiving-original-exports)
+  - [🔖 Making a data diary](#-making-a-data-diary)
+  - [📐Using spreadsheets to track transformations](#using-spreadsheets-to-track-transformations)
+- [✂️ Make a longer version and a shorter cut](#%EF%B8%8F-make-a-longer-version-and-a-shorter-cut)
+- [☕️ Being mindful of time](#%EF%B8%8F-being-mindful-of-time)
+- [🐌 Curating an environment for interpretive work](#-curating-an-environment-for-interpretive-work)
+- [🐙 Inspiration, acknowledgments and contributors](#-inspiration-acknowledgments-and-contributors)
 
-"*When is the next coffee break?*"
+# 🐜 Organising collaborative work at a distance
 
-One of the sayings from Digital Methods Winter and Summer Schools is "take breaks seriously".
+"*How do we organise ourselves online?*"
 
-This is to make sure that you give yourself the rest in order to feel refreshed and alert over several periods of focused concentration, but also to have collective moments together as a group beyond the immediate tasks at hand.
+When doing collaborative work online it is useful to have a channel for text chat in order to share links and coordinate (e.g. Slack, Teams, Mattermost, IRC). While you may not want the channel to be "public", you may also want to choose something that external guests and issue experts are able to join.
 
-Plans may change and things often will not unfold as you expect, so it is also important to look at how much time you have, and make plans that work with rather than against the amount of time that you have available.
+As well as having a channel for everyone involved, you may also wish to have separate channels per project or even per sub-project to facilitate more focused exchanges while doing interpretive work.
 
-# 🐌 Curating an environment for interpretive work
+In addition to a text-based chat channel you may wish to use video conferencing (e.g. Zoom, Jitsi) for introductions, instructions, group discussions, presentations and other things. Video channels can either be "left open" (for ongoing ambient connection), used for scheduled check-ins, or some combination.
 
-"*Shall we split up and reconvene at 1pm?*"
-
-Digital methods projects often oscillate between having collective moments to make plans and reflect together, as well as moments of individual, pair or small group work in order to ["spend time with your data"](https://www.slideshare.net/lilianabounegru/what-does-a-good-digital-methods-project-look-like).
-
-It can be important to make an environment for interpretation where everyone is able to focus, which may involve planning sessions of focused work, interspersed with moments to discuss and plan with others.
-
-If you get stuck or feel as if you are going around in circles, it can make sense to try breaking into smaller groups to discuss - or to try out different approaches.
-
-For larger groups it can also make sense to break into smaller groups, and then even sub-divide further into individual work, pairs or threes for particular tasks.
+Text based chat can be useful to coordinate work across different time zones, which can be accompanied by video moment when participants first join or for "handovers" between participants in different time zones.
 
 # 📖 Taking notes together
 
@@ -108,6 +110,29 @@ When organising research across a group it can be useful to keep notes, versions
 For the purposes of presenting your work you'll often want to focus on a much smaller subset of some of the most interesting things you've found (rather than all of the things that you did).
 
 In order to be able to accommodate both of these scenarios, for example with accounts of your work or slide decks, you can make a longer version to gather everything together, and then make a much shorter cut (a ["radical edit"](https://www.uva.nl/en/profile/r/o/r.a.rogers/r.a.rogers.html) as Richard Rogers puts it) to boil it down to the most interesting and compelling material.
+
+# ☕️ Being mindful of time
+
+"*When is the next coffee break?*"
+
+One of the sayings from Digital Methods Winter and Summer Schools is "take breaks seriously".
+
+This is to make sure that you give yourself the rest in order to feel refreshed and alert over several periods of focused concentration, but also to have collective moments together as a group beyond the immediate tasks at hand.
+
+Plans may change and things often will not unfold as you expect, so it is also important to look at how much time you have, and make plans that work with rather than against the amount of time that you have available.
+
+# 🐌 Curating an environment for interpretive work
+
+"*Shall we split up and reconvene at 1pm?*"
+
+Digital methods projects often oscillate between having collective moments to make plans and reflect together, as well as moments of individual, pair or small group work in order to ["spend time with your data"](https://www.slideshare.net/lilianabounegru/what-does-a-good-digital-methods-project-look-like).
+
+It can be important to make an environment for interpretation where everyone is able to focus, which may involve planning sessions of focused work, interspersed with moments to discuss and plan with others.
+
+If you get stuck or feel as if you are going around in circles, it can make sense to try breaking into smaller groups to discuss - or to try out different approaches.
+
+For larger groups it can also make sense to break into smaller groups, and then even sub-divide further into individual work, pairs or threes for particular tasks.
+
 
 # 🐙 Inspiration, acknowledgments and contributors
 

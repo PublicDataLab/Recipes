@@ -67,14 +67,26 @@ An alternative approach to downloading images is to use the [command line](https
 2. Rename column as “Id”
 3. Make a copy of “Id” column into a new column
 4. Rename the new column as “image”
-5. In the new column “Image”, transform URLs strings into file names:
-  - Sort column “Image” alphabetically
-  - There are different types of urls, but all of them ends with the image name. The goal is to delete every character before the image name with the Find and Replace tool. Proceed by group of similar URLs.
-  - Select column “Image”
-  - Edit → find and replace
-  - Find a string such as `https://pbs.twimg.com/media/` and replace with nothing (be sure that you are doing the search only in a “specific range”, which in this case is the column “Image”)
-  - Repeat for each type of URL, until you only have image names and no URLs
+5. In the new column “Image”, transform URLs strings into file names (see below for options)
 6. Export node csv from Google Spreadsheet
+
+### Adding image file names with find and replace
+
+- Sort column “Image” alphabetically
+- There are different types of urls, but all of them ends with the image name. The goal is to delete every character before the image name with the Find and Replace tool. Proceed by group of similar URLs.
+- Select column “Image”
+- Edit → find and replace
+- Find a string such as `https://pbs.twimg.com/media/` and replace with nothing (be sure that you are doing the search only in a “specific range”, which in this case is the column “Image”)
+- Repeat for each type of URL, until you only have image names and no URLs
+
+### Adding file names with VLOOKUP
+
+- Create new sheet called "urls" and copy and paste the image URLs into it.
+- Create a new 'Named range' by clicking on the "Data" menu and then "Named ranges" then "Add a range" from the right hand menu, enter the name "url_list" and select the urls in the sheet and click "Ok" and "Done"
+- Create new sheet called "images" and copy and paste the downloaded file names into it (if you used wget method above you can use `ls -1 >> [name of your file.csv]` to get a list of the downloaded files)
+- Use the [VLOOKUP function](https://support.google.com/docs/answer/3093318?hl=en-GB) to find the URLs associated with each of the images in the "images" sheet by using the following formula next to the first cell on the sheet `=VLOOKUP("*"&A1,url_list, 1,FALSE)`. You can double click the small square in the bottom of the cell or drag down to lookup the rest of the images in the sheet.
+- Copy the table of images and associated urls and paste into a new sheet (e.g. "image_urls_values") using "Edit" > "Paste special" > "Paste values only". Create a new named range (using the same process described above) by selecting these values and naming them "image_url_table".
+- In the "nodes" sheet, create a new column called "Image" and use VLOOKUP again to find the associated URLs with the following formula `=VLOOKUP(A2,image_url_table, 2,FALSE)`. You can double click the small square in the bottom of the cell or drag down to lookup the rest of the images in the sheet.
 
 ## Import network and visualize clusters with Gephi
 
@@ -96,9 +108,10 @@ An alternative approach to downloading images is to use the [command line](https
 6. In the field “Image Path”: paste image path
 7. Set nodes opacity to 0
 8. Deselect “show edges”
-9. Export png
-10. Import png in [Vectr.com](https://vectr.com/)
-11. Annotate custers
+9. Click "Refresh" to generate image network
+10. Export png
+11. Import png in [Vectr.com](https://vectr.com/)
+12. Annotate custers
 
 # 🐙 Inspiration, acknowledgments and contributors
 

@@ -9,6 +9,7 @@ A gathering of digital methods recipes and ["how-tos"](https://recipes.hypothese
 * [🌅🥞 Image stacks, by ranking, compared](image_stacks.md)
 * [🌁🤖 Content similarity image clusters (with computer vision), annotated](image_clusters_machine.md)
 * [🏞👀 Decontextualized images clusters (with human vision), annotated](image_clusters_manual.md)
+* [🟦 ➡️ 🖼️ Downloading images from a list of Facebook posts](facebook_posts_download_images.md)
 
 # 🧮 Hashtags
 

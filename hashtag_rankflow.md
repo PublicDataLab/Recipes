@@ -46,38 +46,27 @@ Findings:
   - *Check that the data has been "parsed" correctly and then click "Create Project".*
   - *Once the data has loaded you can click the small down arrow next to the column containing your hashtags and click "Edit cells" > "Common transforms" > "To lowercase".*
   - *Finally you can click "Export" in the top right hand corner and select "Comma separated value" to re-export the data as a CSV file that you can then work with in a spreadsheet.*
-
-![](https://i.imgur.com/nyLW15F.gif)
-
+    ![](https://i.imgur.com/nyLW15F.gif)
 3. Re-organise data into columns of top hashtags per day for 10 day period.
   - *By default the TCAT export will have three columns: "date", "frequency" and "hashtag". These need to reformatted as per the [example provided with the RankFlow tool](http://labs.polsys.net/tools/rankflow/). The TCAT export should be sorted by date and by frequency.*
-  - *You can import your data to Google Sheets for collaborative work. Keep your original TCAT export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing) and the following screenshots.*
+  - *You can import your data to Google Sheets for collaborative work. Keep your original TCAT export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing), [this screen recording](https://i.imgur.com/9MYEoFn.mp4) and the following screenshots.*
   - *Say you wanted to select the top 100 hashtags per day and copy and paste them into ten columns. It can take some patience to do this manually. As an optional step to speed things you can use a Google Sheets macro to select the correct number of cells for copying and pasting. Click "Tools" > "Script Editor" and then copy and paste the script below into the editor. Then click "Tools" > "Import" and choose "Select200items". When you run this it will select two columns of 100 items from whichever cell the cursor is in. The numbers can be adjusted to fit your inquiry. You can speed things up even more by clicking "Tools" > "Macros" > "Manage Macros" and creating a keyboard shortcut.*
-
-
-  ```
-  /** @OnlyCurrentDoc */
-
-  function Select200items() {
-    var spreadsheet = SpreadsheetApp.getActive();
-    spreadsheet.getCurrentCell().offset(0, 0, 100, 2).activate();
-  };
-  ```
-
-
-  ![](https://i.imgur.com/HyYkYLM.png)
-
-
-  ![](https://i.imgur.com/EBaLrOF.png)
-
+    ```
+    /** @OnlyCurrentDoc */
+    function Select200items() {
+      var spreadsheet = SpreadsheetApp.getActive();
+      spreadsheet.getCurrentCell().offset(0, 0, 100, 2).activate();
+    };
+    ```
+    ![](https://i.imgur.com/HyYkYLM.png)
+    ![](https://i.imgur.com/EBaLrOF.png)
 4. Create visualisation using RankFlow tool
   - *Once you have formatted your data, you can copy and paste the data into the [RankFlow tool](http://labs.polsys.net/tools/rankflow/).*
   - *In this example we will be making a visualisation which has a width of 2000, and height of 1000, specifying these in the boxes and then clicking "generate visualisation".*
   - *Click "show labels" to display the hashtags in the visualisation.*
   - *Once your visualisation is finalised, you can click "generate SVG of current visualisation".*
   - *For finishing touches, you can also add annotations and a legend using graphics editing software.*
-
-  ![](https://i.imgur.com/SY9BhwD.gif)
+    ![](https://i.imgur.com/SY9BhwD.gif)
 
 
 # 🐙 Inspiration, acknowledgments and contributors

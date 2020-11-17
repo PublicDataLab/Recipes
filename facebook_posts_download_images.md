@@ -33,7 +33,10 @@ Collecting data from Facebook with available tools (such as [CrowdTangle](https:
   3. Choose DownThemAll! - All tabs
   4. In the Download Manager, choose "media"
   5. In the "Rapid filter" box, write ".jpg"
+  6. The previous filter filters out png and emojis in the comments. In order to also deselect images included in the comments you can order the image list by Title and deselect every URL with a Title (see image below).
   6. Choose the subfolder where you want your images to be downloaded
   7. Click Download
 
 ![](https://i.imgur.com/4xq2nd4.png)
+
+![](https://i.imgur.com/lbiSMBX.png)

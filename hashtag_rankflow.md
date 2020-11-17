@@ -39,7 +39,10 @@ Findings:
 1. Export “hashtag frequency” data from TCAT
   - 🤔 *Think carefully when you choose the range of dates. Why these particular dates? Does anything notable happen within this period? Or is it an arbitrary selection of dates (e.g. X days, a week, a month)?*
   - *Remember that what you will see is not the overall use of these hashtags over the period you have chosen, but their frequency of occurrence within the dataset that you are starting with and how certain hashtags co-occur with the original keywords and/or hashtags that you have chosen.*
-2. Normalise data and harmonise cases of hashtags using OpenRefine.
+2. Make a copy of the CSV file and remove the top row
+  - *It is good practice to keep the original TCAT export somewhere for reference (e.g. in a "TCAT exports" folder) and to make a copy that you can edit and work with.*
+  - *The top row of the CSV file will contain something like "Hashtag frequency for [dataset name] from [start date] to [end date]". If you directly import the TCAT export directly to OpenRefine it may not import correctly, so you can delete the top row. The new top row should contain three headers for your data: "date", "frequency" and "hashtag".*
+3. Normalise data and harmonise cases of hashtags using OpenRefine.
   - *Sometimes hashtags may have different cases which may mean they are counted separately in graphs created using the RankFlow tool. For example, #AmazonFires, #amazonfires, #Amazonfires and #AmaZonFirEs might be treated as separate hashtags. To prevent this we can transform the hashtags so they are all in the same case.*
   - *Download and install [OpenRefine](https://openrefine.org/). After installation it should open up a browser window.*
   - *Click "choose files" and find the CSV file that you have downloaded from TCAT and then click "Next". (CSV stands for ["comma-separated values"](https://en.wikipedia.org/wiki/Comma-separated_values) and this is a simple, widely used format for storing tabular data and moving it between different applications and services.)*
@@ -47,7 +50,7 @@ Findings:
   - *Once the data has loaded you can click the small down arrow next to the column containing your hashtags and click "Edit cells" > "Common transforms" > "To lowercase".*
   - *Finally you can click "Export" in the top right hand corner and select "Comma separated value" to re-export the data as a CSV file that you can then work with in a spreadsheet.*
     ![](https://i.imgur.com/nyLW15F.gif)
-3. Re-organise data into columns of top hashtags per day for 10 day period.
+4. Re-organise data into columns of top hashtags per day for 10 day period.
   - *By default the TCAT export will have three columns: "date", "frequency" and "hashtag". These need to reformatted as per the [example provided with the RankFlow tool](http://labs.polsys.net/tools/rankflow/). The TCAT export should be sorted by date and by frequency.*
   - *You can import your data to Google Sheets for collaborative work. Keep your original TCAT export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing), [this screen recording](https://i.imgur.com/9MYEoFn.mp4) and the following screenshots.*
   - *Say you wanted to select the top 100 hashtags per day and copy and paste them into ten columns. It can take some patience to do this manually. As an optional step to speed things you can use a Google Sheets macro to select the correct number of cells for copying and pasting. Click "Tools" > "Script Editor" and then copy and paste the script below into the editor. Then click "Tools" > "Import" and choose "Select200items". When you run this it will select two columns of 100 items from whichever cell the cursor is in. The numbers can be adjusted to fit your inquiry. You can speed things up even more by clicking "Tools" > "Macros" > "Manage Macros" and creating a keyboard shortcut.*
@@ -60,7 +63,7 @@ Findings:
     ```
     ![](https://i.imgur.com/HyYkYLM.png)
     ![](https://i.imgur.com/EBaLrOF.png)
-4. Create visualisation using RankFlow tool
+5. Create visualisation using RankFlow tool
   - *Once you have formatted your data, you can copy and paste the data into the [RankFlow tool](http://labs.polsys.net/tools/rankflow/).*
   - *In this example we will be making a visualisation which has a width of 2000, and height of 1000, specifying these in the boxes and then clicking "generate visualisation".*
   - *Click "show labels" to display the hashtags in the visualisation.*

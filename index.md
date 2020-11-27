@@ -11,9 +11,10 @@ A gathering of digital methods recipes and ["how-tos"](https://recipes.hypothese
 * [🏞👀 Decontextualized images clusters (with human vision), annotated](image_clusters_manual.md)
 * [🟦 ➡️ 🖼️ Downloading images from a list of Facebook posts](facebook_posts_download_images.md)
 
-# 🧮 Hashtags
+# 🧮 Digital methods recipes
 
 * [📈 Visualising hashtags over time with rankflow diagrams](/hashtag_rankflow.md)
+* [🧮 URL-Facebook Group networks](/url-facebook.md)
 
 # 🗃 Organising
 

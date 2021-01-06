@@ -88,6 +88,9 @@ Here is an example of brief "data notes" on the export, cleaning and curation of
 
 ![](https://i.imgur.com/vTn32Fj.png?1)
 
+## ☃️ Freezing shared lists and datasets
+
+If you have lists and datasets which multiple people and/or groups are working with at the same time, it may be preferable to either finalise these before parallel group work begins or to do this at the start of the workshop and then freeze them, to avoid having to redo/refresh other datasets and research which is based on this.
 
 ## 📐Using spreadsheets to track transformations
 

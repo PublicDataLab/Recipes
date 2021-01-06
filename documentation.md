@@ -13,6 +13,7 @@ This document outlines different practices approaches for organising, documentin
   - [🗄 Archiving original exports](#-archiving-original-exports)
   - [🔖 Making a data diary](#-making-a-data-diary)
   - [📐Using spreadsheets to track transformations](#using-spreadsheets-to-track-transformations)
+  - [☃️ Freezing shared lists and datasets](#-freezing-shared-lists-and-datasets)
 - [✂️ Make a longer version and a shorter cut](#%EF%B8%8F-make-a-longer-version-and-a-shorter-cut)
 - [☕️ Being mindful of time](#%EF%B8%8F-being-mindful-of-time)
 - [🐌 Curating an environment for interpretive work](#-curating-an-environment-for-interpretive-work)
@@ -88,10 +89,6 @@ Here is an example of brief "data notes" on the export, cleaning and curation of
 
 ![](https://i.imgur.com/vTn32Fj.png?1)
 
-## ☃️ Freezing shared lists and datasets
-
-If you have lists and datasets which multiple people and/or groups are working with at the same time, it may be preferable to either finalise these before parallel group work begins or to do this at the start of the workshop and then freeze them, to avoid having to redo/refresh other datasets and research which is based on this.
-
 ## 📐Using spreadsheets to track transformations
 
 "*Do you have an earlier version?*"
@@ -103,6 +100,10 @@ There are lots of ways of keeping track of changes to datasets, but one simple w
 For example, here's a Twitter data export that has been transformed and curated in order to produce a [RankFlow diagram](http://labs.polsys.net/tools/rankflow/), with different "cuts" of the dataset in different sheets:
 
 ![](https://i.imgur.com/eegve1B.gif)
+
+## ☃️ Freezing shared lists and datasets
+
+If you have lists and datasets which multiple people and/or groups are working with at the same time, it may be preferable to either finalise these before parallel group work begins or to do this at the start of the workshop and then freeze them, to avoid having to redo/refresh other datasets and research which is based on this.
 
 # ✂️ Make a longer version and a shorter cut
 

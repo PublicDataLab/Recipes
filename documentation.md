@@ -13,7 +13,7 @@ This document outlines different practices approaches for organising, documentin
   - [🗄 Archiving original exports](#-archiving-original-exports)
   - [🔖 Making a data diary](#-making-a-data-diary)
   - [📐Using spreadsheets to track transformations](#using-spreadsheets-to-track-transformations)
-  - [☃️ Freezing shared lists and datasets](#-freezing-shared-lists-and-datasets)
+  - [☃️ Freezing shared lists and datasets](#%EF%B8%8F-freezing-shared-lists-and-datasets) 
 - [✂️ Make a longer version and a shorter cut](#%EF%B8%8F-make-a-longer-version-and-a-shorter-cut)
 - [☕️ Being mindful of time](#%EF%B8%8F-being-mindful-of-time)
 - [🐌 Curating an environment for interpretive work](#-curating-an-environment-for-interpretive-work)

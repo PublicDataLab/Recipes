@@ -20,10 +20,10 @@ This recipe starts from a full Twitter dataset exported from the [Twitter Captur
   3. Refer to the [official documentation](https://docs.openrefine.org/manual/installing) for troubleshooting errors when installing OpenRefine
   4. When installed, double click on the Open refine icon
   5. OpenRefine opens directly in your browser
-  6. If the browser does not open, you can type this URL in your browser bar: http://127.0.0.1:3333/
+  6. If the browser does not open, you can type this URL in your browser bar: [http://127.0.0.1:3333/](http://127.0.0.1:3333/)
 
-##Opening the full dataset on OpenRefine
-  1. Select the csv from your computer and press [next]
+##Opening the full dataset with OpenRefine
+  1. Select the file from your computer and press [next]
   2. Click [create project] on the top right corner
 
-  ![](https://i.imgur.com/zNJvtuu.mp4)
+![](https://i.imgur.com/zNJvtuu.mp4)

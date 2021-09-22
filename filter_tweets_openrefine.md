@@ -22,7 +22,7 @@ This recipe starts from a full Twitter dataset exported from the [Twitter Captur
   5. OpenRefine opens directly in your browser
   6. If the browser does not open, you can type this URL in your browser bar
 
-##Opening the full dataset with OpenRefine
+## Opening the full dataset with OpenRefine
   1. Select the file from your computer and press [next]
   2. Click [create project] on the top right corner
 

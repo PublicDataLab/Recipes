@@ -26,4 +26,4 @@ This recipe starts from a full Twitter dataset exported from the [Twitter Captur
   1. Select the file from your computer and press [next]
   2. Click [create project] on the top right corner
 
-![](https://i.imgur.com/zNJvtuu.mp4)
+![](https://i.imgur.com/hLjPLTH.gif)

@@ -20,11 +20,15 @@ The goal of the following procedure is to identify communities of clusters more 
 When working with particularly big networks, you need to filter out some nodes based on various parameters to find a balance between complexity and readability. In this step, we apply different filters that can be used to reduce the size of the network. Depending on your dataset, you might need to filter more or fewer nodes (or not filter any).
 
   1. The first thing to do is always to delete the query nodes, that is, the hashtags used for collecting the co-hashtag network. These are usually the biggest nodes in the network (as they are connected to most of the other nodes). Go to the Data Laboratory, order the column containing hashtags frequency from high to low, select the first nodes, right-click, and select Delete All.
+
+![](https://i.imgur.com/xbfIXoh.gif)
+
   2. We could also filter out hashtags with a low frequency. In the Overview panel, find the Filters panel (usually on the right of the interface). In the section Attributes → Range → select the filter called like the column containing hashtags frequency. Drag the filter in the bottom panel. Using the slider at the bottom, set the minimum value of hashtags frequency you want to keep. (you can also write the number).
   3. We then calculate the [Degree](https://en.wikipedia.org/wiki/Degree_distribution) of each node. In the Statistics Panel, select Average Degree and click Run.
   4. We then filter again the network based on the calculated Degree. In the filter panel, go to In the section Attributes → Range → select Degree. Drag the filter in the bottom panel as a subfilter (over the “Drag subfilter here” button). Using the slider at the bottom, select the minimum Degree (you can also write the number)
   5. Select Filter to activate the filters
 
+![](https://i.imgur.com/3Urlm92.gif)
 
 ## Resizing nodes
 In this step, we resize nodes based on how many times hashtags occur in the dataset. This step assumes that you have a column in the node table containing hashtags frequency.
@@ -38,7 +42,8 @@ In this step, we resize nodes based on how many times hashtags occur in the data
 7. Click Apply
 8. You may want to modify minimum and maximum values and click Apply again.
 
-![](https://i.imgur.com/hLjPLTH.gif)
+![](https://i.imgur.com/AA8hXPs.gif)
+
 
 ## Layout parameters
 In this step, we apply a layout algorithm for network spatialisation. We will use [ForceAtlas2](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0098679), a force-directed layout, where nodes tend to be pushed apart, and edges attract nodes. The result is a continuous layout that seeks a balance between these two opposing forces. Parameters can be tweaked to improve the layout. For more information on reading force-directed layouts in visual network analysis, you can refer to this [paper](https://arxiv.org/pdf/1905.02202.pdf).
@@ -55,8 +60,6 @@ In this step, we apply a layout algorithm for network spatialisation. We will us
 9. The Prevent overlap function may be used at the end of the process to avoid overlapping nodes. Check the box and click Run again.
 
 
-  ![](https://i.imgur.com/vlT5Neh.gif)
-
 ## Community detection
 Community detection techniques are helpful in identifying tightly connected nodes (i.e. clusters of most-used hashtags together). In this step, we apply a community detection algorithm and colour nodes accordingly.
 
@@ -68,3 +71,5 @@ Community detection techniques are helpful in identifying tightly connected node
 5. Go to the Appearance panel and select Nodes
 6. In the Appearance panel, click on the Color icon (small icon of the colour palette)
 7. Choose Partition. From the drop-down menu, select Modularity Class and Apply
+
+  ![](https://i.imgur.com/3e3fz1Z.gif)

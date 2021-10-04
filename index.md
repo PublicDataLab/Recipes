@@ -17,6 +17,7 @@ A gathering of digital methods recipes and ["how-tos"](https://recipes.hypothese
 * [🧮 URL-Facebook Group networks](/url-facebook.md)
 * [🌪️💬 Filtering tweets based on hashtags](/filter_tweets_openrefine.md)
 * [🕸️ Co-Hashtag network analysis](/co-hashtag_network.md)
+* [⛰️🏂🏾 Hashtag snowballing](/hashtag_snowballing.md)
 
 # 🗃 Organising
 

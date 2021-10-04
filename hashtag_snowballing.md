@@ -24,11 +24,13 @@ This recipe can be used to work with any co-hashtag network (e.g., from Twitter 
 ## Importing data in Google Spreadsheet
 1. Create a new file in Google Spreadsheet
 2. Import nodes table: File → Import → Select nodes table
-3. In the import file box, remember to select “Replace current sheet.”
+3. In the import file box, remember to select “Replace current sheet”
 4. In the same Spreadsheet, create a new sheet by clicking on the + button on the left bottom part of the interface.
 5. In the new sheet, Import edges table: File → Import → Select edges table.
 6. In the import file box, remember to select “Replace current sheet.”
 7. Rename the two sheets by double-clicking on their name in the bottom part of the interface. Rename them as “nodes” and “edges” to avoid confusion
+
+![](https://i.imgur.com/Gqpvf6H.gif)
 
 
 ## Adding nodes labels to the edges table
@@ -37,18 +39,17 @@ The edges table describes connections between hashtags and the strength of those
 
 1. Create a new empty column next to the Source column, and name it “Source Label.”
 2. In the first cell of the “Source Label” column, write the following function and press enter:
-```=VLOOKUP(A2,nodes!A:B,2,false)
-```
+`=VLOOKUP(A2,nodes!A:B,2,false)`
+
   (This assumes that the nodes table is in a sheet named “nodes”, and the first two columns (A and B) are the Id column and the Label column.)
 3. Drag down the function from the first cell by double-clicking on the right bottom corner of the cell
 4. Create a new empty column next to the Target column, and name it “Target Label.”
 5. In the first cell of the “Target Label” column, write the following function and press enter:
-```	=VLOOKUP(C2,nodes!A:B,2,false)
-```
+`	=VLOOKUP(C2,nodes!A:B,2,false)`
 (This assumes that the nodes table is in a sheet named “nodes”, and the first two columns (A and B) are the Id column and the Label column.)
 6. Drag down the function from the first cell by double-clicking on the right bottom corner of the cell
 
-
+![](https://i.imgur.com/FWcWGF3.gif)
 
 ## Exploring hashtags on Google Spreadsheet
 Now that we have prepared a table with co-hashtag connections and their strength (i.e. weight), we can explore hashtags and expand the list.

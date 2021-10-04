@@ -45,7 +45,7 @@ The edges table describes connections between hashtags and the strength of those
 3. Drag down the function from the first cell by double-clicking on the right bottom corner of the cell
 4. Create a new empty column next to the Target column, and name it “Target Label.”
 5. In the first cell of the “Target Label” column, write the following function and press enter:
-`	=VLOOKUP(C2,nodes!A:B,2,false)`
+`=VLOOKUP(C2,nodes!A:B,2,false)`
 (This assumes that the nodes table is in a sheet named “nodes”, and the first two columns (A and B) are the Id column and the Label column.)
 6. Drag down the function from the first cell by double-clicking on the right bottom corner of the cell
 

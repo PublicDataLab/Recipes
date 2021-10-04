@@ -38,5 +38,6 @@ e.g. https://www.youtube.com/watch?v=**aXnaHh40xnM**
 6. When finished, you can find a .csv in the Output section at the top of the interface
 7. Download the .csv (you can now import it into a spreadsheet software)
 
-![](https://i.imgur.com/Dip3Ha5.png)
+<img src="https://i.imgur.com/Dip3Ha5.png" alt="" width="200px" height="100px">
+![](https://i.imgur.com/Dip3Ha5.png | width=100)
 ![](https://i.imgur.com/zr39LQ2.png)

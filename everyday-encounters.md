@@ -10,7 +10,7 @@ It also might be relevant when looking for not just "issue professionals" but al
 
 There is also longstanding interest in social and cultural research in the study of "everyday life" (for histories of this see, e.g. [Highmore, 2002](https://www.routledge.com/Everyday-Life-and-Cultural-Theory-An-Introduction/Highmore/p/book/9780415223034)), everyday self-presentation (e.g. [Goffman, 1956](https://en.wikipedia.org/wiki/The_Presentation_of_Self_in_Everyday_Life), [Thumim, 2012](https://link.springer.com/book/10.1057/9781137265135)), and everyday activities and situations (e.g. [Garfinkel, 1964](https://www.jstor.org/stable/798722)).
 
-There are different ways of understanding everydayness or ordinariness in relation to social media. Sometimes one can consider "ordinary" or "everyday" users as defined by lack of professional (paid) involvement. Some accounts of influencers and micro-celebrity describe how ordinary or everyday users can become well known through their posts about their lives. Everydayness can be considered a feature of either users or posts. It may also be considered situated and relational (in that someone who uses Twitter to post about their work may nevertheless be considered an "everyday user" in relation to an issue in which they are not professionally involved).
+There are different ways of understanding everydayness or ordinariness in relation to social media. Sometimes one can consider "ordinary" or "everyday" users as defined by lack of professional (paid) involvement. Some accounts of influencers and micro-celebrity describe how ordinary or everyday users can become well known through their posts about their lives. Everydayness can be considered a feature of either users or posts. It may also be considered **situated** and **relational** (in that someone who uses Twitter to post about their work may nevertheless be considered an "everyday user" in relation to an issue in which they are not professionally involved).
 
 # 🧱 Inputs
 
@@ -55,9 +55,57 @@ Thus we might try removing tweets with URLs to explore whether this surfaces mor
 
 To do this in [OpenRefine](https://openrefine.org/):
 - Import csv file as a new project
-- Click the down arrow on the column with the full texts of tweets in it (in this case the "body" column)
-- Click "text filter"
+- Click the down arrow on the column with the full texts of tweets in it (in this case the "Body" column)
+- Click "Text filter"
 - Type "http" in the field to select tweets with links included
 - Click "invert" in order to change the selection to show only those tweets without links included
+- Click "export" to download your selection of data, e.g. for further collaborative analysis or interpretation
 
 ![2021-11-03 16 19 13](https://user-images.githubusercontent.com/1321827/140101941-3d3ef0dc-7e55-4a7a-9e54-03bcd480e0f2.gif)
+
+Sometimes more everyday users may retweet organisational or professional users. To see what happens if you remove these you could use the same steps as above but adding "RT" to the field instead of "http", or by filtering on "no" in the "is_retweet" column.
+
+### Lower post activity
+
+Other researchers have suggested that more "everyday" users may be characterised by a greater diversity of concerns rather than posts which focus more narrowly on a set of topic or themes.
+
+For example, [Brooker et al, 2018](https://journals.sagepub.com/doi/full/10.1177/2053951718766624) write:
+
+> we take the term “everyday” to refer to Twitter users who are not primarily motivated around any single topic".
+
+They filtered out tweets with an "exceptionally high average tweets-per-day count".
+
+In the case of a dataset on "ash dieback", we may look for users who post about this, but not regularly or in high volumes (which may be an indicator of professional involvement with this issue).
+
+To do this in [OpenRefine](https://openrefine.org/), we could use **facet counts**.
+
+To count the number of times a given poster appears in your dataset you can:
+- Import csv file as a new project
+- Click the down arrow on the column with the user name of the poster (in this case the "author" column)
+- Click "Facet" and then "Text facet"
+- Select "count" in the panel on the left hand side to sort by count totals
+- Click on the names to see their posts, and "exclude" if you wish to filter them out of your selection
+- Click "[X] choices" (where X is the total number of users) in the panel on the left in order to bring up a box with a summary of the totals (which you can copy and paste into a spreadsheet or visualisation software for further analysis)
+- Click "export" to download your selection of data (e.g. for further collaborative analysis or interpretation)
+
+With this approach we can go down the list and click include or exclude,  but what if we wanted to select and export all below a certain threshold?
+
+We can use the [General Refine Expression Language syntax for facet counts](https://docs.openrefine.org/manual/grelfunctions#facetcountchoicevalue-s-facetexpression-s-columnname) to filter the data:
+- Import csv file as a new project 
+- Click the down arrow on the column with the user name of the poster (in this case the "author" column)
+- Click "Facet" and then "Custom text facet"
+- Type `facetCount(value, "value", "author") == 1` into the text field to see posts from users who appear once in the dataset (you could also try `facetCount(value, "value", "author") <= 2` if you'd like to try users who appear two times or less – and so on)
+- Click "true" in the panel on the left hand side to select the items which meet these criteria
+- Click "export" to download your selection of data (e.g. for further collaborative analysis or interpretation)
+
+![2021-11-03 17 08 47](https://user-images.githubusercontent.com/1321827/140162841-54cf8c27-e0da-4f87-8ade-43cccd428f5a.gif)
+
+More details about working with facet counts can be found in [this tutorial](https://kb.refinepro.com/2011/11/facet-by-facet-count.html).
+
+### Combining, exploring, experimenting, interpreting...
+
+These are a few starting points. You could also consider exploring by sorting or filtering by engagement counts (e.g. retweets, replies, likes), whether in OpenRefine or in spreadsheet software. You could combine a few of the approaches above. What works depends on the issue you're working on and the size and the contents of the dataset you are working with.
+
+As mentioned above everydayness in Twitter activity can be considered **situated** and **relational**. So attempting to find more everyday users and posts is likely to involve exploration, experimentation and close interpretive work rather than a set of steps which can easily be applied in all cases. You may also not succeed in finding what looks like more everyday activity, which can also tell you something.
+
+If you have suggestions for possible approaches to try out or examples from projects you have worked on you can [email us](https://publicdatalab.org/) or [add an issue to the repository](https://github.com/PublicDataLab/Recipes/issues).

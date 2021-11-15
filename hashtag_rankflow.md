@@ -42,14 +42,8 @@ Findings:
 2. Make a copy of the CSV file and remove the top row
   - *It is good practice to keep the original TCAT export somewhere for reference (e.g. in a "TCAT exports" folder) and to make a copy that you can edit and work with.*
   - *The top row of the CSV file will contain something like "Hashtag frequency for [dataset name] from [start date] to [end date]". If you directly import the TCAT export directly to OpenRefine it may not import correctly, so you can delete the top row. The new top row should contain three headers for your data: "date", "frequency" and "hashtag".*
-3. Normalise data and harmonise cases of hashtags using OpenRefine.
-  - *Sometimes hashtags may have different cases which may mean they are counted separately in graphs created using the RankFlow tool. For example, #AmazonFires, #amazonfires, #Amazonfires and #AmaZonFirEs might be treated as separate hashtags. To prevent this we can transform the hashtags so they are all in the same case.*
-  - *Download and install [OpenRefine](https://openrefine.org/). After installation it should open up a browser window.*
-  - *Click "choose files" and find the CSV file that you have downloaded from TCAT and then click "Next". (CSV stands for ["comma-separated values"](https://en.wikipedia.org/wiki/Comma-separated_values) and this is a simple, widely used format for storing tabular data and moving it between different applications and services.)*
-  - *Check that the data has been "parsed" correctly and then click "Create Project".*
-  - *Once the data has loaded you can click the small down arrow next to the column containing your hashtags and click "Edit cells" > "Common transforms" > "To lowercase".*
-  - *Finally you can click "Export" in the top right hand corner and select "Comma separated value" to re-export the data as a CSV file that you can then work with in a spreadsheet.*
-    ![](https://i.imgur.com/nyLW15F.gif)
+3. Normalise data and harmonise cases of hashtags.
+  - *Sometimes hashtags may have different cases which may mean they are counted separately in graphs created using the RankFlow tool. For example, #AmazonFires, #amazonfires, #Amazonfires and #AmaZonFirEs might be treated as separate hashtags. To prevent this we can transform the hashtags so they are all in the same case. [Here](/case-insensitive-hashtags.md) is a recipe showing how to do this with spreadsheets or OpenRefine.*
 4. Re-organise data into columns of top hashtags per day for 10 day period.
   - *By default the TCAT export will have three columns: "date", "frequency" and "hashtag". These need to reformatted as per the [example provided with the RankFlow tool](http://labs.polsys.net/tools/rankflow/). The TCAT export should be sorted by date and by frequency.*
   - *You can import your data to Google Sheets for collaborative work. Keep your original TCAT export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing), [this screen recording](https://i.imgur.com/9MYEoFn.mp4) and the following screenshots.*

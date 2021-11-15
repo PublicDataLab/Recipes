@@ -17,9 +17,7 @@ In digital methods research you may sometimes end up with a list of hashtags whe
 | 2021 | TheMSGpod         | 8     |
 | 2021 | MoongateMix       | 8     |
 
-There are many ways of addressing this with different tools and scripts (e.g. OpenRefine, pandas).
-
-This recipe shows one simple approach using spreadsheets.
+This recipe explores simple approaches to changing cases.
 
 # 🧱 Inputs
 
@@ -29,7 +27,11 @@ This recipe shows one simple approach using spreadsheets.
 
 ## Converting hashtags to one case
 
-In order to convert your hashtags to one case you can...
+### Changing cases with spreadsheets
+
+There are many ways of changing cases of items in datasets with different tools and scripts.
+
+Here's one simple approach using spreadsheets...
 
 1. Import your dataset into your spreadsheet software
 2. Insert new column in which to add hashtags with their cases all changed
@@ -42,6 +44,20 @@ In order to convert your hashtags to one case you can...
     - For example by using [fill down in Excel](https://support.microsoft.com/en-us/office/copy-a-formula-by-dragging-the-fill-handle-in-excel-for-mac-dd928259-622b-473f-9a33-83aa1a63e218) or [autofill in Google Sheets](https://support.google.com/docs/answer/75509?hl=en-GB).
 
 ![2021-11-09 12 37 29](https://user-images.githubusercontent.com/1321827/140927840-ab7622c7-d23c-4912-ad7d-2045982daef8.gif)
+
+### Changing cases with OpenRefine
+
+Another simple alternative to the approach above you can use OpenRefine...
+
+1. Download and install [OpenRefine](https://openrefine.org/). After installation it should open up a browser window.
+2. Click "choose files" and find the CSV file that you have downloaded from TCAT and then click "Next". (CSV stands for ["comma-separated values"](https://en.wikipedia.org/wiki/Comma-separated_values) and this is a simple, widely used format for storing tabular data and moving it between different applications and services.)
+3. Check that the data has been "parsed" correctly and then click "Create Project".
+4. Once the data has loaded you can click the small down arrow next to the column containing your hashtags and click "Edit cells" > "Common transforms" > "To lowercase".
+5. Finally you can click "Export" in the top right hand corner and select "Comma separated value" to re-export the data as a CSV file that you can then work with in a spreadsheet.
+
+![](https://i.imgur.com/nyLW15F.gif)
+
+There are many other ways to do this (e.g. using [pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.str.lower.html)).
 
 ## Recounting the new column
 

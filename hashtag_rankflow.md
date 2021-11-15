@@ -32,23 +32,24 @@ Findings:
   - Fact-checking/misinformation issue (e.g. #fakenews)
 
 
-# 🧱 Inputs from TCAT
+# 🧱 Inputs
 
-- Export “hashtag frequency” data from TCAT
+- Export “hashtag frequency” data from Twitter (e.g. from TCAT, 4CAT, twarc or other Twitter data collection tools)
 
 # 📃 Steps
 
-1. Export “hashtag frequency” data from TCAT
+1. Export “hashtag frequency” data
   - 🤔 *Think carefully when you choose the range of dates. Why these particular dates? Does anything notable happen within this period? Or is it an arbitrary selection of dates (e.g. X days, a week, a month)?*
   - *Remember that what you will see is not the overall use of these hashtags over the period you have chosen, but their frequency of occurrence within the dataset that you are starting with and how certain hashtags co-occur with the original keywords and/or hashtags that you have chosen.*
 2. Make a copy of the CSV file and remove the top row
-  - *It is good practice to keep the original TCAT export somewhere for reference (e.g. in a "TCAT exports" folder) and to make a copy that you can edit and work with.*
-  - *The top row of the CSV file will contain something like "Hashtag frequency for [dataset name] from [start date] to [end date]". If you directly import the TCAT export directly to OpenRefine it may not import correctly, so you can delete the top row. The new top row should contain three headers for your data: "date", "frequency" and "hashtag".*
+  - *It is good practice to keep the original Twitter data export somewhere for reference (e.g. in a "data exports" folder) and to make a copy that you can edit and work with.*
+  - *The top row of the CSV file will contain something like "Hashtag frequency for [dataset name] from [start date] to [end date]". If you directly import the Twitter data export directly to OpenRefine it may not import correctly, so you can delete the top row. The new top row should contain three headers for your data: "date", "frequency" and "hashtag".*
 3. Normalise data and harmonise cases of hashtags.
   - *Sometimes hashtags may have different cases which may mean they are counted separately in graphs created using the RankFlow tool. For example, #AmazonFires, #amazonfires, #Amazonfires and #AmaZonFirEs might be treated as separate hashtags. To prevent this we can transform the hashtags so they are all in the same case. [Here](/case-insensitive-hashtags.md) is a recipe showing how to do this with spreadsheets or OpenRefine.*
 4. Re-organise data into columns of top hashtags per day for 10 day period.
-  - *By default the TCAT export will have three columns: "date", "frequency" and "hashtag". These need to reformatted as per the [example provided with the RankFlow tool](http://labs.polsys.net/tools/rankflow/). The TCAT export should be sorted by date and by frequency.*
-  - *You can import your data to Google Sheets for collaborative work. Keep your original TCAT export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing), [this screen recording](https://i.imgur.com/9MYEoFn.mp4) and the following screenshots.*
+  - *The Twitter data export will likely have columns such as "date", "frequency" and "hashtag". These need to reformatted as per the [example provided with the RankFlow tool](http://labs.polsys.net/tools/rankflow/). The Twitter data export should be sorted by date and by frequency.*
+  - *You can import your data to Google Sheets for collaborative work. Keep your original Twitter data export in sheet 1. You can use filters to select each of the days and then obtain the most frequently used hashtags per day and copy them into sheet 1 as per the data format required for the RankFlow tool. For an example of this see [this spreadsheet](https://docs.google.com/spreadsheets/d/1LZ17LekrMHDVxY87AoAZqa_9kPgL47E2vK36pXXSnrE/edit?usp=sharing), [this screen recording](https://i.imgur.com/9MYEoFn.mp4) and the following screenshots.*
+  - *How many hashtags you include will depend on your research question and on the dataset. The more hashtags you include the harder it may be to see them in your visualistion (e.g. 1000 will likely be too many to see clearly!). If you only include a few hashtags it may be harder to see change over time (e.g. if you only include 5 hashtags, then you might not be able to see the ries and fall of other hashtags which are not amongst these most prominent set). You may also wish to experiment and iterate a bit - to see what kinds of thresholds result in a clear, readable visualisation.*
   - *Say you wanted to select the top 100 hashtags per day and copy and paste them into ten columns. It can take some patience to do this manually. As an optional step to speed things you can use a Google Sheets macro to select the correct number of cells for copying and pasting. Click "Tools" > "Script Editor" and then copy and paste the script below into the editor. Then click "Tools" > "Import" and choose "Select200items". When you run this it will select two columns of 100 items from whichever cell the cursor is in. The numbers can be adjusted to fit your inquiry. You can speed things up even more by clicking "Tools" > "Macros" > "Manage Macros" and creating a keyboard shortcut.*
     ```
     /** @OnlyCurrentDoc */

@@ -6,7 +6,9 @@ How have different hashtags been used over time? This recipe shows how you can v
 
 # 🗄️ Examples
 
-- [What are the most prominent hashtags per day associated with Amazon fires on Twitter (over a 10 day period from 2019-08-01 to 2020-03-08)?](https://i.imgur.com/rYYNZZu.jpg)
+- What are the most prominent hashtags per day associated with Amazon fires on Twitter (over a 10 day period from 2019-08-01 to 2020-03-08)?
+  - [Rankflow with top 100 hashtags](https://i.imgur.com/rYYNZZu.jpg)
+  - [Rankflow with top 10 hashtags](https://i.imgur.com/5HZGyXp.png)
 
 ![](https://i.imgur.com/rYYNZZu.jpg)
 
@@ -59,12 +61,11 @@ Findings:
     ![](https://i.imgur.com/EBaLrOF.png)
 5. Create visualisation using RankFlow tool
   - *Once you have formatted your data, you can copy and paste the data into the [RankFlow tool](http://labs.polsys.net/tools/rankflow/).*
-  - *In this example we will be making a visualisation which has a width of 2000, and height of 1000, specifying these in the boxes and then clicking "generate visualisation".*
+  - *In this example we will be making a visualisation which has a width of 2000, and height of 1000, specifying these in the boxes and then clicking "generate visualisation". 2000x1000 is just an example, you may want the visualisation to be bigger or smaller or different dimensions depending on its size and what you would like to study.*
   - *Click "show labels" to display the hashtags in the visualisation.*
   - *Once your visualisation is finalised, you can click "generate SVG of current visualisation".*
   - *For finishing touches, you can also add annotations and a legend using graphics editing software.*
     ![](https://i.imgur.com/SY9BhwD.gif)
-
 
 # 🐙 Inspiration, acknowledgments and contributors
 

@@ -28,6 +28,7 @@ A gathering of digital methods recipes and ["how-tos"](https://recipes.hypothese
 # 📚Other resources
 
 * [*Field Guide to "Fake News"*](http://fakenews.publicdatalab.org/)
+* [Gephi tutorials](https://www.youtube.com/playlist?list=PL7wfgmADqQfajFq4vcL6S4dTNI5WO-G3K) from Gephi co-founder Mathieu Jacomy
 * [Tools, Scripts, Libraries for Digital Methods Research](https://github.com/PublicDataLab/code-for-research/wiki/Tools,-Scripts,-Libraries-for-Digital-Methods-Research)
 * [Digital Investigations Recipes](https://firstdraftnews.org/long-form-article/digitalrecipes/) published as part of collaboration with First Draft
 * [Investigating troubling content on Amazon](https://datajournalism.com/read/longreads/investigating-troubling-content-on-amazon) published with the European Journalism Centre

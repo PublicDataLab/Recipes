@@ -51,13 +51,16 @@ At this point a new browser should open up! 🎉
 
 > ![](images/browser05.png)
 
-<!-- commenting this out for now as zeeschuimer does not work as expected with this setting
-* Under "History" select "**Never remember history**"
-> ![](images/browser06.png) -->
+
+* Under "History":
+  * If you are using [Zeeschuimer](https://github.com/digitalmethodsinitiative/zeeschuimer) select **remember history**
+  * If you are using [other DMI tools](https://wiki.digitalmethods.net/Dmi/ToolDatabase), you may wish to select **never remember history** (as per [this tutorial](https://www.youtube.com/watch?v=bj65Xr9GkJM))
+
+> ![](images/browser06.png)
 
 * Under "Address Bar", deselect all suggestion options.
 
-> ![](images/browser07.png)
+> ![](images/browser08.png)
 
 ## 4. Install DMI tools Firefox extension
 
